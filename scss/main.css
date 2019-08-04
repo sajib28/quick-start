@@ -3,8 +3,15 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Titillium Web', sans-serif;
+  margin: 0 0 15px 0;
+  padding: 0;
 }
 
 h2 {
@@ -17,8 +24,14 @@ h3 {
   font-weight: 600;
 }
 
-p, span {
+p,
+span {
   font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -26,7 +39,7 @@ a {
 }
 
 section {
-  padding: 80px 0;
+  padding: 80px 0 90px;
 }
 
 .section-header {
@@ -83,7 +96,9 @@ section#slider p {
   overflow: hidden;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  -webkit-box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+          box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-align: center;
 }
@@ -97,9 +112,6 @@ section#slider p {
   color: #fff;
   font-size: 50px;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -151,8 +163,10 @@ section#slider p {
   margin-top: -25px;
   margin-left: -62px;
   visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   width: 124px;
   height: 50px;
 }
@@ -178,19 +192,23 @@ section#slider p {
   bottom: 0;
   width: 100%;
   background: #1bac91;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 #project .project-item:hover .project-img:after {
   visibility: visible;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #project .project-item:hover .overlay {
   visibility: visible;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /*End project*/
@@ -204,7 +222,67 @@ section#slider p {
 }
 
 /*End Team*/
-footer {
+#footer {
   background: #1bac91;
-  padding: 60px;
+  padding: 60px 0;
+  color: #fff;
 }
+
+#footer h4 {
+  font-size: 20px;
+}
+
+#footer p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#footer .social-links a {
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: 8px 4px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 40px;
+  border: 1px solid #fff;
+}
+
+#footer form .input-group {
+  width: 100%;
+}
+
+#footer form input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+#footer form a {
+  font-size: 30px;
+  line-height: 38px;
+  color: #1bac91;
+  background: #fff;
+  padding: 0 15px;
+  border-left: 2px solid #1bac91;
+}
+
+#footer ul li {
+  list-style-type: none;
+}
+
+#footer ul li a {
+  color: #fff;
+  font-size: 15px;
+}
+
+#footer .footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 60px;
+  margin-top: 60px;
+}
+/*# sourceMappingURL=main.css.map */
