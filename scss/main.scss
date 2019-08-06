@@ -42,6 +42,8 @@ $theme-color:#1bac91;
 $white:#fff;
 $black:#000;
 $grey-white:#ddd;
+$grey-black:#f8f8f8;
+
 
 @mixin transition($args...) {
 	-webkit-transition: $args;
@@ -63,17 +65,23 @@ section {
 
 /*End Theme Setting*/
 /*Navbar Menu*/
-nav.navbar {
+nav#pageTop {
 	background: $theme-color;
-
-	.nav-link {
-		color: $white;
-		font-size: 18px;
-	}
+	padding: 0;
 
 	.navbar-brand {
 		color: $white;
 		font-size: 30px;
+	}
+
+	ul {
+		li {
+			a {
+				color: $white;
+				font-size: 18px;
+				padding: 30px 10px;
+			}
+		}
 	}
 }
 
@@ -241,6 +249,43 @@ section#slider {
 
 /*End project*/
 
+/*Start Test{imonial*/
+#testimonial {
+	background: $grey-black;
+
+	img {
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+
+	p {
+		margin-top: 25px;
+		font-size: 20px;
+		font-style: italic;
+	}
+}
+
+/*End Testimonial*/
+
+/*Start  Blog*/
+#blog{
+	h3{
+		margin-top: 15px;
+	}
+}
+/*End  Blog*/
+/*Start  Blog*/
+#client{
+	background: $grey-black;
+}
+/*End  Blog*/
+
 /*Team*/
 #team {
 	background: #f8f8f8;
@@ -268,10 +313,11 @@ section#slider {
 		font-size: 15px;
 		line-height: 1.5;
 	}
-	.social-links{
-		a{
+
+	.social-links {
+		a {
 			border-radius: 50%;
-			color:$white;
+			color: $white;
 			display: inline-block;
 			height: 40px;
 			line-height: 40px;
@@ -283,22 +329,25 @@ section#slider {
 			border: 1px solid $white;
 		}
 	}
-	form{
-		.input-group{
-width: 100%;
+
+	form {
+		.input-group {
+			width: 100%;
 		}
-		input{
+
+		input {
 			outline: 0;
 			border: 0;
 			border-radius: 0;
 		}
-		a{
+
+		a {
 			font-size: 30px;
 			line-height: 38px;
 			color: $theme-color;
 			background: $white;
-			padding:0 15px;
-			border-left:2px solid $theme-color;
+			padding: 0 15px;
+			border-left: 2px solid $theme-color;
 		}
 	}
 
@@ -312,6 +361,7 @@ width: 100%;
 			}
 		}
 	}
+
 	.footer-bottom {
 		border-top: 1px solid $grey-white;
 		padding-top: 60px;

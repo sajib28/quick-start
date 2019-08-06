@@ -46,11 +46,36 @@ $('.fancybox').fancybox();
     var mixer = mixitup(containerEl);
  // End mixitup 
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
+  $('.team-slider').owlCarousel({
     loop:true,
     margin:30,
     dots:true,
     items:4
+   
+});
+});
+
+// Testimonial Slider
+$(document).ready(function(){
+  $('.testimonial').owlCarousel({
+    loop:true,
+    margin:30,
+    dots:true,
+    items:1,
+    animateOut: 'fadeIn',
+    animateIn: 'fadeOut'
+   
+});
+});
+// Testimonial Slider
+$(document).ready(function(){
+  $('.client-slider').owlCarousel({
+    loop:true,
+    margin:30,
+    dots:true,
+    items:5,
+    animateOut: 'fadeIn',
+    animateIn: 'fadeOut'
    
 });
 });
