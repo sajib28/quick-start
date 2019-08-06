@@ -68,11 +68,56 @@ nav#pageTop ul li a {
 /*Home Slider*/
 section#slider {
   padding: 0;
+  position: relative;
+}
+
+section#slider ol li {
+  background-color: #fff;
+  padding: 3px;
 }
 
 section#slider h5 {
   padding: 10px;
   font-size: 25px;
+}
+
+section#slider .carousel:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+section#slider .carousel .carousel-caption {
+  top: 160px;
+  bottom: inherit;
+  text-align: left;
+  left: 9%;
+  width: 50%;
+}
+
+section#slider .carousel .carousel-caption h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section#slider .carousel .carousel-caption p {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+}
+
+section#slider .carousel .carousel-indicators {
+  bottom: 40px;
 }
 
 section#slider p {
