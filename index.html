@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 
 <head>
   <meta charset="UTF-8">
@@ -23,13 +23,13 @@
 
 </head>
 
-<body>
+<body id="pageTop">
   <!-- Start Menu -->
 
-  <nav id="pageTop" class="navbar navbar-expand-lg">
+  <nav id="mainNav" class="navbar navbar-expand-md navbar-trans fixed-top">
     <div class="container">
       <div class="navbar-header ml-auto">
-        <a class="navbar-brand" href="#pageTop"><img src="img/logo.png" alt="" srcset=""></a>
+        <a class="navbar-brand js-scroll" href="#pageTop"><img src="img/logo.png" alt="" srcset=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,16 +37,16 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav navbar-right ml-auto">
-          <li class="nav-item active"><a class="nav-link" href="#pageTop">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
-          <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll active" href="#pageTop">Home</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#service">Service</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#project">Project</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#testimonial">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#clients">Clients</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -67,8 +67,8 @@
               <img class="d-block w-100 img-fluid" src="img/slider/slide-2.jpg" alt="First slide">
               <div class="container">
                 <div class="carousel-caption d-md-block">
-                  <h2 data-animation="animated bounceIn">First slide label</h2>
-                  <p data-animation="animated bounceIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam, recusandae culpa eum iure nulla?</p>
+                  <h2 data-animation="animated slideInDown">First slide label</h2>
+                  <p data-animation="animated slideInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam, recusandae culpa eum iure nulla?</p>
                 </div>
               </div>
             </div>
@@ -76,8 +76,8 @@
               <img class="d-block w-100 img-fluid" src="img/slider/slide-1.jpg" alt="Second slide">
               <div class="container">
                 <div class="carousel-caption d-md-block">
-                  <h2 data-animation="animated bounceIn">First slide label</h2>
-                  <p data-animation="animated bounceIn">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h2 data-animation="animated slideInDown">First slide label</h2>
+                  <p data-animation="animated slideInUp">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
               </div>
             </div>
@@ -85,8 +85,8 @@
               <img class="d-block w-100 img-fluid" src="img/slider/slide-2.jpg" alt="Third slide">
               <div class="container">
                 <div class="carousel-caption d-md-block">
-                  <h2 data-animation="animated bounceIn">First slide label</h2>
-                  <p data-animation="animated bounceIn">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h2 data-animation="animated slideInDown">First slide label</h2>
+                  <p data-animation="animated slideInUp">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
               </div>
             </div>
@@ -523,7 +523,7 @@
               <h3>Demo Blog</h3>
               <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.
               </p>
-              <a href="#">Read More</a>
+              <a class="cus-btn" href="#">Read More <i class="fas fa-angle-right"></i></a>
             </div>
           </div>
         </div>
@@ -534,7 +534,7 @@
               <h3>Demo Blog</h3>
               <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.
               </p>
-              <a href="#">Read More</a>
+              <a class="cus-btn" href="#">Read More <i class="fas fa-angle-right"></i></a>
             </div>
           </div>
         </div>
@@ -545,7 +545,7 @@
               <h3>Demo Blog</h3>
               <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.
               </p>
-              <a href="#">Read More</a>
+              <a class="cus-btn" href="#">Read More <i class="fas fa-angle-right"></i></a>
             </div>
           </div>
         </div>
@@ -682,8 +682,10 @@
   <!-- End Footer -->
 
   <!--   <a class="fancybox" href="img/10_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="img/10_b.jpg" alt="" /></a> -->
-
+  <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
   <script src="vendors/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="vendors/jQuery/easing.min.js"></script>
   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="vendors/mixitup/mixitup.min.js"></script>
   <script type="text/javascript" src="vendors/fancybox/js/jquery.mousewheel.pack.js"></script>
